@@ -1,0 +1,51 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.menuSection{
+    @include mixins.backgroundSection();
+    @include mixins.textSection();
+}
+
+.menu__title{
+    @extend %fontTitle;
+    font-style: normal;
+}
+
+.menu__paragraph{
+    @extend %fontParagraph;
+    font-style: normal;
+}
+
+th {
+    color:variables.$cararra;
+}
+
+td {
+    color:variables.$cararra;
+}
+
+.platterSection{
+    @include mixins.backgroundSection($bgcolor:variables.$fountainblue);
+    @include mixins.textSection();
+}
+
+.platter__title, .platter__price, .platter__text{
+    @extend %fontTitle;
+    color:variables.$bluedianne;
+    font-style: normal;
+}
+
+
+.promoSection{
+    @include mixins.backgroundSection($bgcolor:variables.$bondiblue);
+    @include mixins.textSection();
+
+}
+
+.promo__title{
+    @extend %fontTitle;
+    font-style: normal;
+}
+
+

@@ -1,0 +1,69 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.contactSection {
+    @include mixins.backgroundSection($bgcolor:variables.$bondiblue);
+    @include mixins.textSection();
+}
+
+.contact__title,
+.contact__address,
+.schedule__title,
+.social__title,
+li,
+.form__title {
+    @extend %fontTitle;
+    font-style: normal;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: variables.$cararra;
+    font-family: variables.$font1;
+
+    &:hover {
+        color: variables.$tuliptree;
+    }
+
+}
+
+.formBooking {
+    @include mixins.backgroundSection($bgcolor:variables.$tuliptree);
+    @include mixins.textSection();
+}
+
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: teal;
+}
+
+.input-control.success select {
+    border-color: teal;
+}
+
+
+.input-control.error input {
+    border-color: crimson;
+}
+
+.input-control.error select{
+    border-color: crimson;
+}
+
+.input-control .errorMessage {
+    color: crimson;
+    font-size: 16px;
+    font-style:oblique;
+    font-weight: 900;
+    height: 16px;
+}
+
+
+.form--button {
+    @extend %button;
+}

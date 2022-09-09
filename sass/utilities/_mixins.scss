@@ -1,0 +1,21 @@
+@use "variables";
+
+@mixin backgroundSection($bgcolor:variables.$tuliptree, $paddef:100px){
+    background-color: $bgcolor;
+    padding:$paddef;
+}
+
+@mixin textSection($font:variables.$font2, $color:variables.$cararra, $fs:20px){
+ font-family: $font;
+ color:$color;
+ font-size: $fs;
+}
+
+@mixin backgroundImage($bgimg:variables.$background1){
+    background-image: $bgimg;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+    margin: auto;
+    padding: 100px;
+}

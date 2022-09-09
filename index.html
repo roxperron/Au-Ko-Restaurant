@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="favicon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0191B4">
+  <meta name="apple-mobile-web-app-title" content="Au Koï App">
+  <link rel="apple-touch-icon" href="/pwa/img/pwaicon/maskable_icon_x192.png">
+  <meta name="description" content="Au Koï App">
+  <meta name="theme-color" content="#F3F4F0" />
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+      });
+    }
+  </script>
+  <title>Restaurant Au Koï</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <!------------NAVIGATION START------------>
+  <header>
+    <nav class="navbar d-flex justify-content-center navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="py-2">
+          <li class="d-inline"><a href="index.html" class="navigationMenu__links mx-2">Acceuil</a></li>
+          <li class="d-inline"><a href="menu.html" class="navigationMenu__links mx-2">Menu</a></li>
+          <li class="d-inline"><a href="booking.html" class="navigationMenu__links mx-2">Réservations</a></li>
+          <li class="d-inline"><button id="PWAButton" class="PWA--button  nav-link px-lg-4 px-2" hidden>Installer l'application</button></li>
+        </ul>
+      </div>
+    </nav>
+    <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+  </header>
+  <!------------NAVIGATION END------------>
+  <!------------HOME START------------>
+  <section id="home" class="homeSection">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="home__title">Bienvenue Au Koï</h1>
+            <p>Quand, en 2000, Au Koï a ouvert ses portes sur la rue Ontario à Montréal, les sushis étaient loin de
+              compter
+              parmi les mets les plus populaires. Les sushis étaient appréciés par un petit nombre d’adeptes fidèles et
+              les
+              rares restaurants de sushis s’adressaient aux initiés. Internet contribuant à faire connaître la cuisine
+              du
+              monde, les sushis ont fini par devenir un pilier culturel – Au Koï s’est affirmé comme l’une des meilleurs
+              restaurants de sushis à Montréal.
+              Depuis le début, nous sommes fermement déterminés à faire en sorte que l’expérience offerte par Au Koï ne
+              ressemble à aucune autre. Notre approche traditionnelle des sushis rend hommage à la cuisine Japonaise. Il
+              en
+              résulte une expérience unique en son genre qui plaît aussi bien aux amateurs de sushis qu’à ceux qui n’y
+              ont
+              encore jamais goûté. Au Koï a ainsi gagné des milliers d’adeptes fidèles qui lui réservent une place dans
+              leur
+              quotidien que ce soit par la commande à emporter ou la commande en restaurant.
+            </p>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center pt-4 pb-5 md-5 mt-0">
+      <div class="d-flex flex-column align-items-center">
+        <div class="row justify-content-center">
+          <img src="./img/home/fresh.png" alt="icône d'aliments frais" class="col-4">
+        </div>
+        <h2 class="home__title fs-4">Qualité avant tout</h2>
+        <p class="text-center">Aliments frais, du Québec et certifié pêche responsable.</p>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+        <div class="row justify-content-center">
+          <img src="./img/home/take-out.png" alt="icône d'une boîte de sushis" class="col-4">
+        </div>
+        <h2 class="home__title fs-4">Au resto ou en take-out</h2>
+        <p class="text-center">Venez dégustez nos sushis en restaurant ou en take-out.</p>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+        <div class="row justify-content-center">
+          <img src="./img/home/mixo.png" alt="Icône d'un cocktials" class="col-4">
+        </div>
+        <h2 class="home__title fs-4">Mixologie
+        </h2>
+        <p class="text-center">Une sélection de 20 coktails exotiques ainsi que bières et vin québecois.</p>
+      </div>
+    </div>
+  </section>
+  <!------------HOME END------------>
+  <!------------GAllERY START------------>
+  <section id="gallery" class="galleryContainer">
+    <div class="gallery">
+      <div class="item1">
+        <img src="./img/home/img1.jpg" alt="Image 1" class="galleryImg">
+      </div>
+
+
+      <div class="item2">
+        <img src="./img/home/img2.jpg" alt="Image 2" class="galleryImg">
+      </div>
+
+      <div class="item3">
+        <img src="./img/home/img3.jpg" alt="Image 3" class="galleryImg">
+      </div>
+
+      <div class="item4">
+        <img src="./img/home/img4.jpg" alt="Image 4" class="galleryImg">
+      </div>
+
+      <div class="item5">
+        <img src="./img/home/imgcol3.jpg" alt="Image 5" class="galleryImg">
+      </div>
+
+
+      <div class="item6">
+        <img src="./img/home/img5.jpg" alt="Image 6" class="galleryImg">
+      </div>
+
+
+      <div class="item7">
+        <img src="./img/home/img6.jpg" alt="Image 7" class="galleryImg">
+      </div>
+
+
+      <div class="item8">
+        <img src="./img/home/imgcol2.jpg" alt="Image 8" class="galleryImg">
+      </div>
+
+      <div class="item9">
+        <img src="./img/home/img7.jpg" alt="Image 9" class="galleryImg">
+      </div>
+
+      <div class="item10">
+        <img src="./img/home/img8.jpg" alt="Image 10" class="galleryImg">
+      </div>
+
+      <div class="item11">
+        <img src="./img/home/imgcol1.jpg" alt="Image 11" class="galleryImg">
+      </div>
+
+      <div class="item12">
+        <img src="./img/home/img9.jpg" alt="Image 12" class="galleryImg">
+      </div>
+
+      <div class="item13">
+        <img src="./img/home/imgcol4.jpg" alt="Image 13" class="galleryImg">
+      </div>
+
+      <div class="item14">
+        <img src="./img/home/imgcol5.jpg" alt="Image 14" class="galleryImg">
+      </div>
+    </div>
+  </section>
+  <!------------GALLERY END------------>
+  <!------------CHEF START------------>
+  <section id="chef" class="chefSection container-fluid">
+    <div class="container d-flex justify-content-around align-items-center py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <video autoplay loop muted class="w-100 img-fluid" src="./img/home/chef.mp4"></video>
+        </div>
+
+        <div class="col-md-6 justify-content-around align-items-center">
+          <h1 class="chef__title text-center">Notre Chef : Jacob Tremblay</h1>
+          <p class="text-center">Jacob Tremblay est un chef cuisinier authentique et passionné par son métier qu’il
+            exerce depuis plus de 10 ans.
+            Grâce à son expérience acquise au sein de grands établissements au Japon, Chine, Inde et État-Unis, Jacob
+            Tremblay vous propose une cuisine japonaise traditionnelle et raffinée, conforme à vos souhaits et adaptée à
+            vos évènements et réceptions.
+            La cuisine de Jacob Tremblay allie tradition et inventivité en travaillant exclusivement les produits du
+            terroir, frais et de saison afin de privilégier une authenticité et une traçabilité permettant de respecter
+            les normes et critères environnementaux.
+            La priorité absolue étant la fraicheur, les mets sont préparés juste avant livraison et vous garantissent
+            une qualité gastronomique et un savoir-faire incomparable.
+            Jacob Tremblay souhaite vous faire partager sa passion pour ce métier afin de vous donner entière
+            satisfaction quels que soient vos souhaits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------CHEF END------------>
+  <!------------FOOTER START------------>
+  <footer class="container-fluid footerSection d-flex justify-content-between">
+    <p class="footer__title text-center py-3"> | &copy; Tous droits réservés Restaurant Au Koï, 2022</p>
+    <p class="footer__title text-center py-3">Propulsé par : Agence Miss Cyborg inc.</p>
+  </footer>
+  <!-----------FOOTER END------------>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+  <script src="js/install.js"></script>
+</body>
+
+</html>

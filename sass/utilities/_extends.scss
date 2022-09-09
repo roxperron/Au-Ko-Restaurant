@@ -1,0 +1,42 @@
+@use "variables";
+
+%navigation{
+    background-color: variables.$bluedianne;
+    padding: 15px;
+}
+
+%fontTitle{
+    font-family:variables.$font1;
+    font-style: italic;
+    color:variables.$cararra;
+}
+
+
+
+%fontParagraph{
+    font-family:variables.$font2;
+    font-style: italic;
+    color:variables.$cararra;
+}
+
+%button{
+    background-color: variables.$bondiblue;
+    color: variables.$cararra;
+    font-family: variables.$font1;
+    font-size:24px;
+    border-radius: 5px;
+    border:2px solid variables.$cararra;
+    padding: 5px;
+    text-decoration:none;
+
+    &:hover{
+        background-color: lighten(variables.$bondiblue, 10%);
+        text-decoration: underline;
+        color: variables.$cararra;
+    }
+
+}
+
+
+
+

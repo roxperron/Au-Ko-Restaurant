@@ -1,0 +1,11 @@
+@use "variables";
+@use "mixins";
+@use "extends";
+
+.footerSection{
+    @extend %navigation;
+}
+
+.footer__title{
+    @extend %fontTitle;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="favicon.ico">
+    <title>Restaurant Au Koï</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!------------NAVIGATION START------------>
+    <header>
+        <nav class="navbar d-flex justify-content-center navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="py-2">
+                    <li class="d-inline"><a href="index.html" class="navigationMenu__links mx-2">Acceuil</a></li>
+                    <li class="d-inline"><a href="menu.html" class="navigationMenu__links mx-2">Menu</a></li>
+                    <li class="d-inline"><a href="booking.html" class="navigationMenu__links mx-2">Réservations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+    </header>
+    <!------------NAVIGATION END------------>
+    <!------------CONTACT START------------>
+    <section id="contact" class="contactSection container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="address__bloc pb-5">
+                    <h2 class="contact__title text-center">Nous joindre</h2>
+                    <address class="contact__address text-center">2773 Boulevard René-Lévesque</address>
+                    <address class="contact__address text-center">Montréal, Québec H3B 4W8</address>
+                    <address class="contact__address text-center"><a class="contact__link" href="tel:418-801-5623"><img
+                                class="mx-1" src="./img/booking/phone.png" alt="Icône d'un téléphone">418-801-5623</a>
+                    </address>
+                    <address class="contact__address text-center"><a class="contact__link"
+                            href="mailto:restaurantaukoi@gmail.com"><img class="mx-1" src="./img/booking/mail.png"
+                                alt="Icône d'un courriel">restaurantaukoi@gmail.com</a></address>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="schedule__bloc pb-5">
+                    <h2 class="schedule__title text-center">Horaire</h2>
+                    <div>
+                        <ul class="menuNavigation text-center list-group">
+                            <li class="d-inline">Dimanche : 11h à 14h & 17h à 21h</li>
+                            <li class="d-inline">Lundi & Mardi : Fermé </li>
+                            <li class="d-inline">Mercreci : 11h à 13h & 17h à 21h</li>
+                            <li class="d-inline">Jeudi: 11h à 13h & 17h à 21h</li>
+                            <li class="d-inline">Vendredi : 11h à 13h & 17h à 21h</li>
+                            <li class="d-inline">Samedi : 11h à 13h & 17h à 21h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="social__bloc pt-5 pb-5">
+                    <h2 class="social__title text-center">Suivez-nous</h2>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="https://www.facebook.com/" target="_blank"><img src="./img/booking/facebook.png"
+                          alt="Icône de facebook"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img src="./img/booking/instagram.png"
+                          alt="Ic¸one d'instagram"></a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    </section>
+    <!------------CONTACT END------------>
+    <!------------IMAGE START------------>
+    <section id="imgBooking" class="imgBooking">
+        <div class="row g-0">
+            <div class="col-4">
+                <img src="./img/booking/img1.jpg" alt="food" class="h-100 w-100 object-cover">
+            </div>
+            <div class="col-4">
+                <img src="./img/booking/img2.jpg" alt="food" class="h-100 w-100 object-cover">
+            </div>
+            <div class="col-4">
+                <img src="./img/booking/img3.jpg" alt="food" class="h-100 w-100 object-cover">
+            </div>
+        </div>
+    </section>
+    <!-----------IMAGE END------------>
+    <!-----------FORM START------------>
+    <section id="formBooking" class="container-fluid formBooking">
+        <h2 class="form__title text-center pt-5 pb-5">Formulaire de réservation</h2>
+        <div class="container">
+            <form novalidate id="form" class="row g-3" action="confirmation.html" onsubmit="return validateForm()" >
+                <div class="col-md-6 input-control">
+                  <label for="firstName" class="form-label">Prénom:</label>
+                  <input type="text" class="form-control"  name="firstName" id="firstName">
+                  <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                  <label for="lastName" class="form-label">Nom:</label>
+                  <input type="text" class="form-control" name="lastName" id="lastName">
+                  <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                  <label for="telNumber" class="form-label">Numéro de téléphone:</label>
+                    <input type="tel" class="form-control"  name="telNumber" id="telNumber" aria-describedby="telNumber">
+                    <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                  <label for="email" class="form-label px-2">Courriel: </label>
+                  <input type="email" class="form-control" name="email" id="email" aria-describedby="email">
+                  <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                  <label for="days" class="form-label">Journée:</label>
+                  <input type="text" class="form-control" name="days" id="days" aria-describedby="days">
+                  <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                  <label for="hours" class="form-label">Heure:</label>
+                  <input type="number" class="form-control" name="hours" id="hours" aria-describedby="hours">
+                  <p class="fs-6 fst-italic">Les réservations sont disponibles aux heures seulement. Par exemple, pour une réservation à midi inscrire 12.</p>
+                  <div class="errorMessage"></div>
+                </div>
+      
+                <div class="input-control col-md-6">
+                    <label for="personNumber" class="form-label">Nombre de personne:</label>
+                    <input type="number" class="form-control" name="personNumber" id="personNumber" aria-describedby="personNumber">
+                    <div class="errorMessage"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="note" class="form-label">Notes</label>
+                    <textarea class="form-control" id="note" rows="1"></textarea>
+                  </div>
+      
+                <div class="col-md-12">
+                  <button class="form--button" type="submit">Réservez</button>
+                </div>
+              </form>
+            </div>
+    </section>
+
+    <!------------FORM END------------>
+    <!------------FOOTER START------------>
+    <footer class="container-fluid footerSection d-flex justify-content-between">
+        <p class="footer__title text-center py-3"> | &copy; Tous droits réservés Restaurant Au Koï, 2022</p>
+        <p class="footer__title text-center py-3">Propulsé par : Agence Miss Cyborg inc.</p>
+    </footer>
+    <!-----------FOOTER END------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

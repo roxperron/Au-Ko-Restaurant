@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="favicon.ico">
+    <title>Restaurant Au Koï</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <!------------NAVIGATION START------------>
+    <header>
+        <nav class="navbar d-flex justify-content-center navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="py-2">
+                    <li class="d-inline"><a href="index.html" class="navigationMenu__links mx-2">Acceuil</a></li>
+                    <li class="d-inline"><a href="menu.html" class="navigationMenu__links mx-2">Menu</a></li>
+                    <li class="d-inline"><a href="booking.html" class="navigationMenu__links mx-2">Réservations</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a class="screen-reader-text" href="#content">Aller au contenu principal</a>
+    </header>
+    <!------------NAVIGATION END------------>
+    <!------------MENU START------------>
+    <section id="menu" class="container-fluid menuSection">
+        <h1 class="menu__title text-center py-5">Menu</h1>
+        <div class="row">
+            <h2 class="menu__title text-center py-5">Les entrées</h2>
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="row g-0 flex-column flex-md-row rounded-start mt-5">
+                    <div class="col-12 col-md-3">
+                        <img src="./img/menu/soupes.jpg" alt="Photo d'un bol de soupe asiatique"
+                            class="w-100  object-cover object-pos-top mv-auto d-block">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="p-4 h-100  round-end d-flex flex-column">
+                            <div>
+                                <h2 class="menu__title">Soupes</h2>
+                                <p class="menu__paragraph">Format unique, bouillon à base de lait de coco et curry
+                                    excepté p.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Saveur</th>
+                                            <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Miso</td>
+                                            <td>2.99</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Thaï</th>
+                                            <td>2.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poulet ou Boeuf pimenté à la citronelle</td>
+                                            <td>3.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vermilles au crabe</td>
+                                            <td>4.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="row g-0 flex-column flex-md-row rounded-start mt-5">
+                    <div class="col-12 col-md-3">
+                        <img src="./img/menu/dumplings.jpg" alt="Photo d'un bol de dumplings"
+                            class="w-100  object-cover object-pos-top mv-auto d-block">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="p-4  round-end d-flex flex-column">
+                            <div>
+                                <h2 class="menu__title">Dumplings</h2>
+                                <p class="menu__paragraph">Trois dumplings géants cuit à la vapeur accompagnés de sa
+                                    vedurette et d'une
+                                    sauce au choix: aux arachides, soya, épicée, sésame ou à l'orange.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Choix de viande</th>
+                                            <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Poulet</td>
+                                            <td>4.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Porc </td>
+                                            <td>4.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Canard</td>
+                                            <td>6.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Crevettes</td>
+                                            <td>7.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Pétoncles</td>
+                                            <td>7.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="menu__title text-center py-5">Plats principaux</h2>
+
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="row g-0 flex-column flex-md-row rounded-start mt-5">
+                    <div class="col-12 col-md-3">
+                        <img src="./img/menu/pokés.jpg" alt="Photo d'un poké bol"
+                            class="w-100 object-cover object-pos-top mv-auto d-block">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="p-4 h-100  round-end d-flex flex-column">
+                            <div>
+                                <h2 class="menu__title">Pokés</h2>
+                                <p class="menu__paragraph">Servit avec riz, édamamés, avocats, fèves germées, carottes,
+                                    concombres,
+                                    laitue, chip de wonton et d'une sauce au choix: aux arachides, soya, épicée, sésame.
+                                </p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Choix de protéines</th>
+                                            <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Végé (4 batônnets de tofu frit)</td>
+                                            <td>10.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Crevettes</td>
+                                            <td>12.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Saumon</td>
+                                            <td>13.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Thon</td>
+                                            <td>14.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="row g-0 flex-column flex-md-row rounded-start mt-5">
+                    <div class="col-12 col-md-3">
+                        <img src="./img/menu/makis.jpg" alt="Photo d'un plat de makis"
+                            class="w-100 object-cover object-pos-top mv-auto d-block">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="p-4 h-100  round-end d-flex flex-column">
+                            <div>
+                                <h2 class="menu__title">Makis</h2>
+                                <p class="menu__paragraph">Rouleau de 10 morceaux accompagnés d'une salade de nouilles
+                                    et d'une sauce au
+                                    choix: aux arachides, soya, épicée, sésame. Choix de 3 garniture dans le rouleau:
+                                    fraises, mangues,
+                                    carottes, concombres, avocats, fromage à la crème. Disponible en version frit pour
+                                    un supplément de
+                                    1.99$. </p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Choix de protéines</th>
+                                            <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Végé (4 batônnets de tofu frit)</td>
+                                            <td>10.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Crevettes</td>
+                                            <td>12.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Pétoncles</td>
+                                            <td>12.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Saumon</td>
+                                            <td>13.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Thon</td>
+                                            <td>14.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Crabe</td>
+                                            <td>17.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Homard</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="row g-0 flex-column flex-md-row rounded-start mt-5">
+                    <div class="col-12 col-md-3">
+                        <img src="./img/menu/nigiris.jpg" alt="Photo d'un plat de nigiris"
+                            class="w-100  object-cover object-pos-top mv-auto d-block">
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <div class="p-4 h-100  round-end d-flex flex-column">
+                            <div>
+                                <h2 class="menu__title">Nigiris</h2>
+                                <p class="menu__paragraph">Deux nigiris géants accompagnés d'une sauce au choix: aux
+                                    arachides, soya,
+                                    épicée, sésame.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Choix de viande</th>
+                                            <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Végé (Moceaux d'avocats)</td>
+                                            <td>5.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Omlette japonaise</td>
+                                            <td>6.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Crevettes</td>
+                                            <td>7.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Pétoncles</td>
+                                            <td>8.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Saumon</td>
+                                            <td>9.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Thon</td>
+                                            <td>9.99</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Anguille</td>
+                                            <td>10.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!------------MENU END------------>
+    <!------------PACKAGE START------------>
+    <section id="platter" class="container-fluid platterSection">
+        <div class="container my-5 py-5">
+            <h1 class="platter__title text-center">Nos plateaux</h1>
+            <h2 class="platter__title text-center">Plateaux éconos pour vos moments spéciaux!</h2>
+            <div class="mt-5 row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div>
+                    <div class="card h-100">
+                        <img src="./img/menu/platter4.jpg" alt="Photo d'un plateau de suhis">
+                        <div class="px-3">
+                            <h5 class="platter__title py-2">Bïgan</h5>
+                            <h6 class="platter__price">49.99</h6>
+                            <p class="platter__text">Plateau de 40 makis végétariens.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card h-100">
+                        <img src="./img/menu/platter3.jpg" alt="Photo d'un plateau de sushis">
+                        <div class="px-3">
+                            <h5 class="platter__title py-2">Petto</h5>
+                            <h6 class="platter__price">39.99</h6>
+                            <p class="platter__text">Plateau de 20 makis au choix
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card h-100">
+                        <img src="./img/menu/platter1.jpg" alt="Photo d'un plateau de sushis">
+                        <div class="px-3">
+                            <h5 class="platter__title py-2">Chü kurai</h5>
+                            <h6 class="platter__price">69.99</h6>
+                            <p class="platter__text">Plateau de 30 makis et 15 nigiris au choix.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card h-100">
+                        <img src="./img/menu/platter2.jpg" alt="Photo d'un plateau de suhis">
+                        <div class="px-3">
+                            <h5 class="platter__title py-2">Ôkï</h5>
+                            <h6 class="platter__price">99.99</h6>
+                            <p class="platter__text">Plateau de 40 makis et 25 nigiris au choix.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------PACKAGE END------------>
+    <!-----------PROMO START------------>
+    <section id="promo" class="container-fluid promoSection">
+        <h1 class="promo__title text-center py-5">Nos promotions</h1>
+        <div class="container pb-5">
+            <div class="row  justify-content-center">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/menu/makisenfolie.jpg" class="d-block w-100"
+                                alt="Photo d'une assiette de makis.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="promo__title">Makis en folie</h2>
+                                <h3 class="promo__title">Rabais de 10% sur les Makis le vendredi.</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/menu/5a7.jpg" class="d-block w-100" alt="Photo des cocktails">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="promo__title">5 @ 7</h2>
+                                <h3 class="promo__title">Cocktails sélectionnés à 2 pour 1 le jeudi</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/menu/takeout.jpg" class="d-block w-100"
+                                alt="Photo de personnes mangeant une commande pour empoter">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="promo__title">Netflix and chill</h2>
+                                <h3 class="promo__title">Rabais de 10% sur les commandes au comptoir le dimanche.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------PROMO END------------>
+    <!------------FOOTER START------------>
+    <footer class="container-fluid footerSection d-flex justify-content-between">
+        <p class="footer__title text-center py-3"> | &copy; Tous droits réservés Restaurant Au Koï, 2022</p>
+        <p class="footer__title text-center py-3">Propulsé par : Agence Miss Cyborg inc.</p>
+    </footer>
+    <!-----------FOOTER END------------>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
